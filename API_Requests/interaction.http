@@ -1,0 +1,44 @@
+### Generate a response
+POST http://127.0.0.1:11434/api/generate
+Content-Type: application/json
+
+{
+    "model": "llama3.2",
+    "prompt": "Explain the theory of relativity in simple terms.",
+}
+
+### Generate a response in Spanish
+POST http://127.0.0.1:11434/api/generate
+Content-Type: application/json
+
+{
+    "model": "llama3.2",
+    "prompt": "Explica la teoría de la relatividad en términos simples.",
+}
+
+
+### Generate a response
+POST http://127.0.0.1:11434/api/generate
+Content-Type: application/json
+
+{
+    "model": "llama3.2",
+    "prompt": "Explica la teoría de la relatividad en términos simples."
+    "max_tokens": 150,
+    "temperature": 0.7,
+    "stream": false
+}
+
+
+### Create a chat message
+POST http://127.0.0.1:11434/api/chat
+Content-Type: application/json
+
+{
+    "model": "llama3.2",
+    "messages": [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "Can you tell me who is John Cena?"}
+    ],
+    "stream": false
+}
