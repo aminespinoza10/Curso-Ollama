@@ -1,0 +1,15 @@
+# Crea tu venv
+python3 -m venv .venv
+
+# Activa tu ambiente
+# En Linux/Mac:
+source .venv/bin/activate
+
+# En Windows:
+.venv\Scripts\activate
+
+# Instala el sdk de Ollama
+pip install ollama
+
+# Desactiva tu ambiente al terminar
+deactivate
