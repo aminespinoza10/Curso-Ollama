@@ -1,0 +1,6 @@
+@api-host=https://api.api-ninjas.com/v1
+@api-key= API KEY AQUÍ
+
+### Make a request to get the cryptocurrency price
+GET {{api-host}}/cryptoprice?symbol=BTCUSD
+X-Api-Key: {{api-key}}

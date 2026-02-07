@@ -13,3 +13,6 @@ pip install ollama
 
 # Desactiva tu ambiente al terminar
 deactivate
+
+# Necesitarás
+pip install chromadb pypdf requests rich typing
